@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyViewItem">
+        <attr name="Icon" format="integer"></attr>
+        <attr name="Title" format="string"></attr>
+        <attr name="Content" format="string"></attr>
+        <attr name="Center" format="string"></attr>
+        <attr name="TileContentVisibale" format="boolean"></attr>
+    </declare-styleable>
+</resources>

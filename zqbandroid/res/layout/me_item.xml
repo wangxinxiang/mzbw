@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/space_48"
+              android:background="@color/white"
+              >
+
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/img_icon"
+               android:src="@drawable/account_icon"
+               android:layout_centerVertical="true"
+               android:layout_margin="@dimen/space_12"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_userID"
+              style="@style/item_text"
+              android:text="赚钱宝账号:12345678"
+              android:layout_centerVertical="true"
+            />
+
+
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="@style/title_image"
+                 android:id="@+id/btn_arrow"
+                 android:src="@drawable/btn_entry_account_icon"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:paddingRight="@dimen/space_12"
+                 android:paddingLeft="@dimen/space_7"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/main_bg"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/title_bar" android:id="@+id/more_titlebar"/>
+
+    <LinearLayout style="@style/login_regist"
+                  android:background="@color/white"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/login_phone"
+                  android:textColor="@color/text_content"
+                android:textSize="@dimen/text_size18" android:padding="@dimen/space_15"/>
+        <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                android:id="@+id/tv_login_phone"
+                  android:background="@null"
+                  android:inputType="phone"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/login_regist"
+                  android:background="@color/white"
+                  android:layout_marginTop="1dp"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="密码    "
+                  android:textColor="@color/text_content"
+                  android:textSize="@dimen/text_size18" android:padding="@dimen/space_15"/>
+        <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/tv_login_password"
+                  android:background="@null"
+                  android:inputType="textPassword"/>
+    </LinearLayout>
+
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_30"
+            android:id="@+id/btn_login"
+            android:text="@string/login_btn"
+            android:textSize="@dimen/text_size21"
+            android:background="@drawable/btn_selector"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="找回密码"
+              android:layout_marginRight="@dimen/space_30"
+              android:layout_marginBottom="@dimen/space_20"
+              android:textSize="@dimen/text_size18"
+              android:textColor="@color/text_content"
+            android:id="@+id/btn_login_find_password"
+            android:layout_gravity="end"/>
+
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/btn_entry_regist"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_30"
+            android:id="@+id/btn_login_register"
+            android:text="@string/login_register"
+            android:textColor="@color/text_result_orange"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size18"/>
+</LinearLayout>

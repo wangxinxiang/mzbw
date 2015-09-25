@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/space_80"
+                android:background="@color/text_result_orange"
+        >
+
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_current_score"
+              style="@style/item_text"
+              android:text="Q币"
+              android:textSize="@dimen/text_size16"
+              android:textColor="@color/white"
+              android:layout_centerVertical="true"
+              android:layout_margin="@dimen/space_12"
+            />
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               style="@style/title_image"
+               android:id="@+id/img_money"
+               android:src="@drawable/integral_icon"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/space_7"
+               android:layout_toLeftOf="@+id/tv_money_account"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_money_account"
+              android:text="处理中"
+              android:textColor="@color/white"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@+id/btn_arrow"
+              android:textSize="@dimen/text_size24"/>
+
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="@style/title_image"
+                 android:id="@+id/btn_arrow"
+                 android:src="@drawable/btn_entry_arrow"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:paddingRight="@dimen/space_12"
+                 android:paddingLeft="@dimen/space_7"/>
+
+</RelativeLayout>

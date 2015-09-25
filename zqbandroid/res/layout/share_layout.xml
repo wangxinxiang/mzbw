@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:background="@color/main_bg"
+              android:padding="0dp"
+              android:layout_margin="0dp"
+              android:id="@+id/ll_share_all"
+              android:layout_height="wrap_content">
+
+    <TextView android:layout_width="wrap_content"
+              android:text="@string/share"
+              android:layout_marginTop="@dimen/space_7"
+              android:layout_gravity="center_horizontal"
+              android:textSize="@dimen/text_size18"
+              android:textColor="@color/black"
+              android:layout_height="wrap_content"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/ll_share"
+                  android:padding="@dimen/space_7"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_height="wrap_content">
+        <LinearLayout style="@style/share_text">
+        <ImageButton style="@style/share"
+                 android:id="@+id/ibtn_wechat"
+                 android:src="@drawable/wechat"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="@string/wechat"
+                      android:textColor="@color/black"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/share_text">
+            <ImageButton style="@style/share"
+                         android:id="@+id/ibtn_friends_circle"
+                         android:src="@drawable/friends_circle"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="@string/friends_circle"
+                      android:layout_gravity="center_horizontal"
+                      android:textColor="@color/black"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/share_text">
+            <ImageButton style="@style/share"
+                         android:id="@+id/ibtn_sina"
+                         android:src="@drawable/sina"/>
+                         android:src="@drawable/sina"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="@string/sina"
+                      android:textColor="@color/black"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/share_text">
+            <ImageButton style="@style/share"
+                         android:id="@+id/ibtn_qq"
+                         android:src="@drawable/qq"/>
+            <TextView android:layout_width="wrap_content"
+                      android:text="@string/qq"
+                      android:textColor="@color/black"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button android:layout_width="match_parent"
+            android:id="@+id/btn_share_cancle"
+            android:text="@string/cancle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size18"
+            android:layout_margin="@dimen/space_20"
+            android:layout_height="wrap_content" android:background="@drawable/cancle_icon"/>
+
+</LinearLayout>

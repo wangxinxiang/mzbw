@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">秒赚不误</string>
+    <string name="exchange_record">兑换纪录</string>
+    <string name="daily_sign_in">每日签到</string>
+    <string name="daily_sign_in_des_one">直接点击签到按钮，完成签到。</string>
+    <string name="daily_sign_in_des_two">连续签到有奖，长期有效，每连续签到15天，奖积分15000。</string>
+    <string name="rightnow_sign_in">马上签到</string>
+    <string name="exchange_center">兑换中心</string>
+    <string name="grade_reward_des">升级有什么奖励？怎么提升升级？</string>
+    <string name="phone">7x24小时客服热线</string>
+    <string name="share">分享奖励积分+1000</string>
+    <string name="wechat">微信</string>
+    <string name="friends_circle">朋友圈</string>
+    <string name="sina">新浪</string>
+    <string name="qq">QQ</string>
+    <string name="login_phone">手机号</string>
+    <string name="login_password">  密码  </string>
+    <string name="login_btn">登录</string>
+    <string name="login_register">还没有账号,去注册</string>
+    <string name="register_code">验证码</string>
+    <string name="register_getcode">获取验证码</string>
+    <string name="register_next">下一步</string>
+    <string name="register_login">已有账号,直接登录</string>
+    <string name="cancle">取消</string>
+    <string name="confirm">确认</string>
+    <string name="complite">完成</string>
+    <string name="qqnumber">请输入QQ号</string>
+    <string name="reconfirm">再次输入确认</string>
+    <string name="question">请选择密码提示问题</string>
+    <string name="answer">提示答案:2-20位中文字符</string>
+    <string name="alterpassword">密码提示问题及答案对于保护您的账户安全极为重要，请您一定牢记。</string>
+    <string name="recharge_qcoin">腾讯Q币1个，兑换后帮您代充，请填写QQ号，审核通过后三分钟到账(兑换必看)</string>
+    <string name="set_account">你还没有设定赚钱宝用户名和密码，请去任务列表完成账号设置任务后再来兑换！</string>
+    <string name="getit">知道了</string>
+    <string name="exchangecallsuccess">兑换请求已经提交</string>
+    <string name="exchangecallsuccesscontent">兑换请求已经提交，请在一个工作日(24小时)后查询是否到账，请注意：
+    周六日和节假日期间“审核中”的兑换请求将顺延到上班后处理。</string>
+    <string name="exchangecallfail">兑换请求失败</string>
+    <string name="exchangecallfailcontent">兑换失败，您的积分还不够，继续努力赚积分吧～</string>
+
+
+    <string name="app_back">返回</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_continue">继续</string>
+    <string name="app_tip">提示</string>
+    <string name="app_send">发送</string>
+    <string name="app_set">设置</string>
+    <string name="app_save">保存</string>
+    <string name="app_delete">删除</string>
+    <string name="app_nextstep">下一步</string>
+    <string name="app_prevstep">上一步</string>
+    <string name="app_finish">完成</string>
+    <string name="app_find">查找</string>
+    <string name="app_edit">编辑</string>
+
+    <!-- applet -->
+    <string name="applet_secimg_title">填写验证码</string>
+    <string name="applet_secimg_change">换一张图片</string>
+    <string name="applet_seccode_tip">验证码不能为空</string>
+    <string name="applet_seccode_fail_tip">验证码错误，请重新输入</string>
+
+    <!-- verify -->
+    <string name="verify_password_null_tip">密码不能为空，请输入密码</string>
+
+    <!-- format -->
+    <string name="fmt_date">M月d日</string>
+    <string name="fmt_longdate">yyyy年M月d日</string>
+    <string name="fmt_datetime" formatted="false">M月d日 %skk:mm</string>
+    <string name="fmt_patime">kk:mm</string>
+    <string name="fmt_longtime" formatted="false">yyyy年M月d日 %skk:mm</string>
+    <string name="fmt_in60min" formatted="false">%d分钟前</string>
+    <string name="fmt_justnow">1分钟内</string>
+    <string name="fmt_dawn">凌晨</string>
+    <string name="fmt_morning">早上</string>
+    <string name="fmt_noon">中午</string>
+    <string name="fmt_afternoon">下午</string>
+    <string name="fmt_evening">晚上</string>
+    <string name="fmt_pre_yesterday">昨天</string>
+    <string name="fmt_iap_err" formatted="false">网络连接不可用，请稍候重试</string>
+
+    <string name="hello">Hello World, SDKSampleActivity!</string>
+    <string name="app_share">分享</string>
+
+    <string name="enter">这是SDK_Sample的入口界面</string>
+    <string name="reg">将该app注册到微信</string>
+    <string name="goto_send">跳转到发消息界面</string>
+    <string name="launch_wx">启动微信</string>
+    <string name="check_timeline_supported">检查是否支持发送到朋友圈</string>
+
+    <string name="send_to_wx_title">发送到微信</string>
+    <string name="get_from_wx_title">从微信接收</string>
+    <string name="show_from_wx_title">显示微信请求的消息</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+    <!-- WXMediaMessage -->
+    <string name="send">发送到微信</string>
+    <string name="receive">从微信接收</string>
+
+    <string name="is_timeline">是否分享到朋友圈</string>
+    <string name="send_text">发送文本</string>
+    <string name="send_text_default">这段文字发送自微信SDK示例程序</string>
+
+    <string name="send_img">发送图片</string>
+    <string-array name="send_img_item">
+        <item>发送图片的二进制数据</item>
+        <item>发送图片的本地路径</item>
+        <item>发送图片的URL</item>
+    </string-array>
+    <string name="send_img_file_not_exist">文件不存在</string>
+
+    <string name="send_pic">发送照片</string>
+
+    <string name="send_music">发送音乐</string>
+    <string-array name="send_music_item">
+        <item>发送音乐url</item>
+        <item>发送低带宽音乐url</item>
+    </string-array>
+
+    <string name="send_video">发送视频</string>
+    <string-array name="send_video_item">
+        <item>发送视频url</item>
+        <item>发送低带宽视频url</item>
+    </string-array>
+
+    <string name="send_webpage">发送网页</string>
+    <string-array name="send_webpage_item">
+        <item>发送网页url</item>
+    </string-array>
+
+    <string name="send_appdata">发送app消息</string>
+    <string-array name="send_appdata_item">
+        <item>发送app文件本地路径</item>
+        <item>发送app二进制数据</item>
+        <item>发送无附件的app</item>
+    </string-array>
+
+    <string name="send_emoji">发送表情消息</string>
+    <string-array name="send_emoji_item">
+        <item>发送表情本地路径</item>
+        <item>发送表情二进制数据</item>
+    </string-array>
+
+    <string-array name="send_emoji_item_format">
+        <item>发送GIF图片</item>
+        <item>发送非GIF图片</item>
+    </string-array>
+
+    <string name="share_text_to_weixin">回应文本到微信</string>
+    <string name="share_text_default">这段文字回应自微信SDK示例程序</string>
+    <string name="share_url_to_weixin">回应URL到微信</string>
+    <string name="share_pic_to_weixin">回应图片到微信</string>
+    <string name="share_music_to_weixin">回应音乐到微信</string>
+    <string name="share_video_to_weixin">回应视频到微信</string>
+    <string name="share_appdata_to_weixin">回应app消息到微信</string>
+
+    <string name="register_as_weixin_app_sender">注册微信事件发送器</string>
+    <string name="get_token_from_weixin">获取微信访问Token</string>
+    <string name="unregister_from_weixin">从微信反注册</string>
+
+    <string name="show_from_wx_tip">这个界面用于显示微信向第三方app请求显示的信息</string>
+</resources>

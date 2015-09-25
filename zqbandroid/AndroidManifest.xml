@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.jhlc.zqb"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--友盟-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <!--电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 以下为可选权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application android:label="@string/app_name" android:name=".ui.ZQBApplication"
+        android:icon="@drawable/logo"
+        android:screenOrientation="portrait">
+
+        <activity android:name=".ui.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ExchangeQcionActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.AccountInfoActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.TaskDetailActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait">
+            <!-- 微博分享-->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.NewAccountTaskActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ExchangeQCoinInputActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.LoginActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.RegistActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.ListActivity" android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"/>
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize"
+                  android:exported="false" >
+        </activity>
+
+        <!--友盟-->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!--微信-->
+        <receiver
+                android:name=".weixin.AppRegister"
+                android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <!--有米-->
+        <activity
+            android:name="net.youmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <service
+            android:name="net.youmi.android.AdService"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="net.youmi.android.ExpService"
+            android:exported="false" >
+        </service>
+        <receiver
+            android:name="net.youmi.android.AdReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!--微博-->
+        <service android:name="com.sina.weibo.sdk.net.DownloadService"
+                 android:exported="false">
+        </service>
+
+        <!--友盟-->
+        <meta-data android:value="55fac39867e58e9511002147" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+
+        <!--有米-->
+        <meta-data
+            android:name="YOUMI_CHANNEL"
+            android:value="这里替换为非负整数的渠道号" >
+        </meta-data>
+    </application>
+</manifest>

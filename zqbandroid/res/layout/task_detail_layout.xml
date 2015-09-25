@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white">
+
+    <include layout="@layout/title_bar" android:id="@+id/titlebar"></include>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_70"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/line_height"
+                    android:id="@+id/rl_daily_sign_in" android:layout_below="@+id/titlebar">
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/img_icon"
+                   android:src="@drawable/daily_sign_in"
+                   android:layout_centerVertical="true"
+                   android:layout_margin="@dimen/space_12"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_center"
+                  style="@style/item_text"
+                  android:text="@string/daily_sign_in"
+                  android:layout_centerVertical="true"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_score_result"
+                  android:text="+1000"
+                  android:padding="@dimen/space_12"
+                  android:textColor="@color/text_result_orange"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/text_size18"
+                  android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+     <TextView android:layout_width="match_parent"
+           android:layout_height="@dimen/line_height"
+           android:id="@+id/line"
+             android:background="@color/main_bg" android:layout_below="@+id/rl_daily_sign_in"></TextView>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/daily_sign_in_text"
+              android:id="@+id/tv_sign_in_one"
+              android:text="@string/daily_sign_in_des_one"
+              android:textColor="@color/text_result_orange" android:layout_below="@+id/line"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/daily_sign_in_text"
+              android:id="@+id/tv_sign_in_two"
+              android:textColor="@color/daily_sign_in_text"
+            android:text="@string/daily_sign_in_des_two" android:layout_below="@+id/tv_sign_in_one"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/line_height"
+              android:id="@+id/line_two"
+              android:background="@color/main_bg" android:layout_above="@+id/btn_exchangeQcoin"></TextView>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_exchangeQcoin"
+            android:text="@string/rightnow_sign_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size21"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_7"
+            android:layout_marginBottom="@dimen/space_7"
+            android:layout_alignParentBottom="true" android:background="@drawable/btn_selector"/>
+
+</RelativeLayout>

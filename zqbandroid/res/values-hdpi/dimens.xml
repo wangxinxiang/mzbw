@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_hight">54dp</dimen>
+
+    <dimen name="text_size24">22sp</dimen>
+    <dimen name="text_size21">19sp</dimen>
+    <dimen name="text_size18">16sp</dimen>
+    <dimen name="text_size16">14sp</dimen>
+    <dimen name="text_size14">12sp</dimen>
+    <dimen name="text_size12">10sp</dimen>
+    <dimen name="text_size0">0sp</dimen>
+
+    <dimen name="text_space">3dip</dimen>
+    <dimen name="line_height">1dip</dimen>
+    <dimen name="table_space">4dip</dimen>
+    <dimen name="space_7">7dip</dimen>
+    <dimen name="space_12">12dip</dimen>
+    <dimen name="normal_space">10dip</dimen>
+    <dimen name="space_15">15dip</dimen>
+    <dimen name="space_20">20dip</dimen>
+    <dimen name="space_25">30dip</dimen>
+    <dimen name="space_30">30dip</dimen>
+    <dimen name="space_48">48dip</dimen>
+    <dimen name="space_60">60dip</dimen>
+    <dimen name="space_70">70dip</dimen>
+    <dimen name="space_80">80dip</dimen>
+    <dimen name="space_90">90dip</dimen>
+    <dimen name="space_100">100dip</dimen>
+
+    <dimen name="edit_hight">45dip</dimen>
+
+
+    <dimen name="btn_close">32dip</dimen>
+    <dimen name="btn_hight45">45dip</dimen>
+    <dimen name="btn_hight38">38dip</dimen>
+    <dimen name="popmenu_width">240dip</dimen>
+
+
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <dimen name="LargeTextSize">16dp</dimen>
+    <dimen name="BasicTextSize">15dp</dimen>
+    <dimen name="TitleTextSize">18dp</dimen>
+    <dimen name="SmallTextSize">14dp</dimen>
+    <dimen name="SmallerTextSize">13dp</dimen>
+    <dimen name="LargestTextSize">30dp</dimen>
+    <dimen name="ChattingTextSize">16dp</dimen>
+    <dimen name="ChattingContentMinHeight">49dp</dimen>
+    <dimen name="PreferenceItemHeight">42dp</dimen>
+    <dimen name="ConversationItemHeight">58dp</dimen>
+    <dimen name="LargeAvatarSize">56dp</dimen>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg">
+
+    <include layout="@layout/title_bar" android:id="@+id/titlebar"></include>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_70"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/line_height"
+                    android:id="@+id/rl_daily_sign_in" android:layout_below="@+id/titlebar">
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/img_icon"
+                   android:src="@drawable/qcoin_icon"
+                   android:layout_centerVertical="true"
+                   android:layout_margin="@dimen/space_12"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_QCoinNums"
+                  style="@style/item_text"
+                  android:text="Q币1个"
+                  android:layout_centerVertical="true"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_QCoinMoney"
+                  android:text="10万"
+                  android:padding="@dimen/space_12"
+                  android:textColor="@color/text_result_orange"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/text_size18"
+                  android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+     <TextView android:layout_width="match_parent"
+           android:layout_height="@dimen/line_height"
+           android:id="@+id/line"
+             android:background="@color/main_bg" android:layout_below="@+id/rl_daily_sign_in"></TextView>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/daily_sign_in_text"
+              android:id="@+id/tv_sign_in_one"
+              android:text="@string/recharge_qcoin"
+              android:textColor="@color/daily_sign_in_text" android:layout_below="@+id/line"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/daily_sign_in_text"
+              android:id="@+id/tv_sign_in_two"
+              android:textColor="@color/text_result_orange"
+            android:text="@string/set_account" android:layout_below="@+id/tv_sign_in_one"
+              android:layout_marginBottom="@dimen/space_7"/>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:id="@+id/ll_qqnumber"
+                  android:background="@color/white"
+                  android:layout_below="@+id/tv_sign_in_two">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="请输入QQ号  "
+                  android:textColor="@color/text_content"
+                  android:textSize="@dimen/text_size18" android:padding="@dimen/space_15"/>
+        <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/et_QQNumber"
+            android:background="@null"
+                  android:inputType="phone"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                  android:id="@+id/ll_reconfirm"
+                  android:background="@color/white"
+                  android:layout_below="@+id/ll_qqnumber"
+                  android:layout_marginTop="@dimen/line_height">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/reconfirm"
+                  android:textColor="@color/text_content"
+                  android:textSize="@dimen/text_size18" android:padding="@dimen/space_15"/>
+        <EditText android:layout_width="match_parent" android:layout_height="match_parent"
+                  android:id="@+id/et_reConfirm"
+            android:background="@null"
+                  android:inputType="phone"/>
+    </LinearLayout>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_daily_sign_in"
+            android:text="@string/confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size21"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_7"
+            android:layout_marginBottom="@dimen/space_7"
+            android:layout_alignParentBottom="false" android:background="@drawable/btn_selector"
+            android:layout_below="@+id/ll_reconfirm"/>
+
+</RelativeLayout>

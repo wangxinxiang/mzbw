@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/space_80"
+                android:id="@+id/rl_all_item"
+                android:background="@color/white">
+
+    <TextView android:layout_width="match_parent" android:layout_height="@dimen/line_height"
+              android:background="@color/main_bg" android:id="@+id/line"/>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/img_icon"
+               android:src="@drawable/qcoin_icon"
+               android:layout_centerVertical="true"
+        android:padding="@dimen/space_12" />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/item_text"
+              android:id="@+id/tv_item_title"
+              android:text="Q币1个"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/img_icon"
+        android:layout_above="@+id/tv_item_center" />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_item_center"
+              style="@style/item_text"
+              android:text="Q币"
+              android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_icon" />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_item_content"
+              android:text="兑换时间：2015-08-25"
+              android:textColor="@color/text_content"
+              android:layout_toRightOf="@+id/img_icon"
+        android:layout_below="@+id/tv_item_center" />
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_result"
+              android:text="处理中"
+              android:textColor="@color/text_result_orange"
+              android:layout_centerVertical="true"
+              android:layout_toLeftOf="@+id/btn_arrow"
+              android:textSize="@dimen/text_size18"/>
+
+    <ImageButton android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 style="@style/title_image"
+                 android:id="@+id/btn_arrow"
+                 android:src="@drawable/btn_entry_arrow"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:paddingRight="@dimen/space_12"
+                 android:paddingLeft="@dimen/space_7"/>
+
+</RelativeLayout>

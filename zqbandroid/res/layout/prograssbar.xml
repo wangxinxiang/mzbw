@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/space_100"
+                android:background="@color/text_result_orange">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@color/transparency"
+                   android:id="@+id/account_icon"
+                   android:padding="@dimen/space_20"
+                   android:layout_centerVertical="true"
+                   android:src="@drawable/defaul_head_image"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/current_grade"
+                  android:textColor="@color/white"
+                  android:text="当前等级:LV12"
+                  android:layout_marginBottom="@dimen/space_12"
+                  android:layout_toRightOf="@id/account_icon"
+                  android:layout_above="@+id/grade_prograssbar"
+                  android:textSize="@dimen/text_size16"/>
+
+        <ProgressBar style="?android:attr/progressBarStyleHorizontal"
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/space_7"
+                     android:id="@+id/grade_prograssbar"
+                     android:max="100"
+                     android:progress="40"
+                     android:progressDrawable="@drawable/prograssbar"
+                     android:layout_centerVertical="true"
+                     android:layout_toRightOf="@id/account_icon" android:layout_toLeftOf="@+id/tv_grade"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_grade_des"
+                  android:textColor="@color/white"
+                  android:text="@string/grade_reward_des"
+                  android:layout_marginTop="@dimen/space_12"
+                  android:layout_toRightOf="@id/account_icon"
+                  android:layout_below="@+id/grade_prograssbar"
+                  android:textSize="@dimen/text_size14"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_grade"
+                  android:text="LV12"
+                  android:layout_marginLeft="@dimen/space_7"
+                  android:paddingRight="@dimen/space_12"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/text_size14" android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/more_titlebar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_register_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_15"
+            android:text="@string/login_phone"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_size18" />
+
+        <EditText
+            android:id="@+id/et_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_register_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_15"
+            android:text="@string/register_code"
+            android:textColor="@color/text_content"
+            android:textSize="@dimen/text_size18" />
+
+        <EditText
+            android:id="@+id/et_register_ver"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_7"
+            android:layout_marginTop="@dimen/space_7"
+            android:background="@color/table_line" />
+
+        <TextView
+            android:id="@+id/tv_register_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_15"
+            android:text="@string/register_getcode"
+            android:textColor="@color/text_result_orange"
+            android:textSize="@dimen/text_size18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_register_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_12"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:onClick="question"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_15">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="请选择密码提示的问题"
+                android:textColor="@color/lightgrey"
+                android:textSize="@dimen/text_size18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_entry_arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:padding="@dimen/space_15"
+            android:text="提示答案:2-20位中文字符"
+            android:textColor="@color/lightgrey"
+            android:textSize="@dimen/text_size18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_7"
+            android:padding="@dimen/space_15"
+            android:text="密码提示问题及答案对于您的账号安全极为重要,请您一定牢记."
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_30"
+        android:background="@drawable/btn_selector"
+        android:onClick="next"
+        android:text="@string/register_next"
+        android:textSize="@dimen/text_size21" />
+
+    <LinearLayout
+        android:id="@+id/ll_register_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/radio_selector"
+            android:checked="true"
+            android:button="@null"
+            android:drawablePadding="@dimen/space_7"
+            android:text="我已阅读并同意"
+            android:textColor="@color/text_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《5173用户服务协议》"
+            android:textColor="@color/text_result_orange" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_entry_regist"
+        android:onClick="login"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_30"
+        android:text="@string/register_login"
+        android:textColor="@color/text_result_orange"
+        android:textSize="@dimen/text_size18" />
+</LinearLayout>

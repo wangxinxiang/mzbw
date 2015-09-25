@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!-- 分享网页 -->
+    <com.jhlc.zqb.view.WBShareItemView
+            android:id="@+id/share_webpage_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector"
+            android:layout_margin="@dimen/space_20"
+            android:text="确定分享"
+            android:id="@+id/share_to_btn"/>
+</LinearLayout>

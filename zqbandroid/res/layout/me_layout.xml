@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg">
+
+    <include layout="@layout/me_item" android:id="@+id/me_titlebar"></include>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/space_100"
+              android:gravity="center"
+              android:text="总赚积分3600.5万"
+              android:textColor="@color/white"
+              android:id="@+id/tv_total_score"
+              android:background="@color/text_result_orange" android:layout_below="@+id/me_titlebar"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/space_60"
+              android:gravity="center"
+              android:text="任务获得1000万"
+              android:textColor="@color/black"
+              android:id="@+id/tv_task_score"
+              android:background="@color/white" android:layout_below="@+id/tv_total_score"
+              android:layout_toLeftOf="@+id/me_line_one"/>
+
+    <TextView android:layout_width="@dimen/line_height" android:layout_height="@dimen/space_60"
+              android:id="@+id/me_line_one" android:background="@color/main_bg"
+              android:layout_below="@+id/tv_total_score" android:layout_centerHorizontal="true"/>
+
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="@dimen/space_60"
+              android:gravity="center"
+              android:layout_gravity="right"
+              android:text="推广获得800万"
+              android:textColor="@color/black"
+              android:id="@+id/tv_extension_score"
+              android:background="@color/white" android:layout_below="@+id/tv_total_score"
+              android:layout_alignParentRight="true" android:layout_toRightOf="@+id/me_line_one"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/space_60"
+              android:gravity="center"
+              android:text="已兑换10万"
+              android:textColor="@color/black"
+              android:id="@+id/tv_already_exchange_score"
+              android:background="@color/white"
+              android:layout_below="@+id/tv_task_score" android:layout_marginTop="@dimen/space_12"
+              android:layout_marginBottom="@dimen/space_12" android:layout_toLeftOf="@+id/me_line_two"/>
+
+    <TextView android:layout_width="@dimen/line_height" android:layout_height="@dimen/space_60"
+              android:id="@+id/me_line_two" android:background="@color/main_bg"
+              android:layout_below="@+id/me_line_one" android:layout_centerHorizontal="true"/>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/space_60"
+              android:gravity="center"
+              android:text=" 可兑换10万"
+              android:textColor="@color/black"
+              android:id="@+id/tv_maybe_exchange_score"
+              android:background="@color/white"
+              android:layout_below="@+id/tv_extension_score" android:layout_marginBottom="@dimen/space_12"
+              android:layout_marginTop="@dimen/space_12" android:layout_toRightOf="@+id/me_line_two"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/sclv_me"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_maybe_exchange_score">
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+              android:layout_below="@+id/tv_already_exchange_score"
+                 android:id="@+id/ll_me_task_record" >
+    </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
